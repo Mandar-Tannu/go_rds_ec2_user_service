@@ -30,7 +30,7 @@ func initDB() {
 		" user=" + dbUser +
 		" password=" + dbPassword +
 		" dbname=" + dbName +
-		" sslmode=disable"
+		" sslmode=require"
 
 	db, err = sql.Open("postgres", dsn)
 	if err != nil {
