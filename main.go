@@ -26,11 +26,11 @@ func initDB() {
 	}
 
 	dsn := "host=" + dbHost +
-		"port=" + dbPort +
-		"user+" + dbUser +
-		"password=" + dbPassword +
-		"dbname=" + dbName +
-		"sslmode=disable"
+		" port=" + dbPort +
+		" user=" + dbUser +
+		" password=" + dbPassword +
+		" dbname=" + dbName +
+		" sslmode=disable"
 
 	db, err = sql.Open("postgres", dsn)
 	if err != nil {
